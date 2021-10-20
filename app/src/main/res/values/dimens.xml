@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <dimen name="image_view_height">120dp</dimen>
+    <dimen name="text_select_mright">16dp</dimen>
+    <dimen name="text_sale">40dp</dimen>
+    <dimen name="text_quantity">20dp</dimen>
+    <dimen name="text_order">25dp</dimen>
+</resources>
