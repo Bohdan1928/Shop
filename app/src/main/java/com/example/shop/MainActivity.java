@@ -22,6 +22,7 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
     private HashMap<String, Integer> hashMap;
     TextView textPrice;
     EditText editTextPersonName;
+    TextView numberQuantity = findViewById(R.id.numberQuantity);
 
     String name;
     private int price;
@@ -58,7 +59,6 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
 
     public void increaseQuantity(View view) {
         quantity += 1;
-        TextView numberQuantity = findViewById(R.id.numberQuantity);
         numberQuantity.setText("" + quantity);
         textPrice = findViewById(R.id.textPrice);
         textPrice.setText("" + quantity * price);
@@ -69,7 +69,6 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
         if (quantity == -1) {
             quantity = 0;
         }
-        TextView numberQuantity = findViewById(R.id.numberQuantity);
         numberQuantity.setText("" + quantity);
         textPrice = findViewById(R.id.textPrice);
         textPrice.setText("" + quantity * price);
@@ -94,7 +93,6 @@ public class MainActivity extends AppCompatActivity implements AdapterView.OnIte
             default:
                 imageView2.setImageResource(R.drawable.drumset);
                 break;
-
         }
     }
 

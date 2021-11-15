@@ -19,9 +19,12 @@ public class OrderActivity extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_order);
+
         Intent orderIntent = getIntent();
+
         String userName = orderIntent.getStringExtra("userName");
         String instrumentName = orderIntent.getStringExtra("instrumentName");
+
         int orderQuantity = orderIntent.getIntExtra("orderQuantity", 0);
         int price = orderIntent.getIntExtra("price", 0);
 
